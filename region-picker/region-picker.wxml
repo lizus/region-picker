@@ -1,0 +1,18 @@
+<picker value="{{value}}" mode="multiSelector" range="{{pickArr}}" bindcolumnchange="colChange" bindchange="valChange">
+    <view class="region-picker ">
+        <block wx:if="{{province.length>0}}">
+            <text class="province">{{province}}</text>
+        </block>
+        <block wx:if="{{city.length>0}}">
+            <text class="line"> - </text>
+            <text class="city">{{city}}</text>
+        </block>
+        <block wx:if="{{county.length>0}}">
+            <text class="line"> - </text>
+            <text class="county">{{county}}</text>
+        </block>
+        <block wx:if="{{county.length<1 && city.length<1 && province.length<1}}">
+            <text class="empty-region">请选择</text>
+        </block>
+    </view>
+</picker>

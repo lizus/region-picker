@@ -1,0 +1,5 @@
+.region-picker {
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+}
